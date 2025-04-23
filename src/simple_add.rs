@@ -1,4 +1,4 @@
-pub fn simple_add(a: i32, b: i32) -> i32 {
+pub fn add_two(a: i32, b: i32) -> i32 {
     a + b
 }
 
@@ -7,13 +7,13 @@ mod tests {
     use super::*;
 
     #[test]
-    fn add_two() {
+    fn add_two_numbers() {
         // Arrange
         let a = 2;
         let b = 3;
         let expected = 5;
         // Act
-        let result = simple_add(a, b);
+        let result = add_two(a, b);
         // Assert
         assert_eq!(
             result, expected,
